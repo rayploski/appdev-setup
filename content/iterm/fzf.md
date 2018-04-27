@@ -1,3 +1,14 @@
++++
+
+title="fzf"
+type="page"
+weight=40
+
+
++++
+
+
+
 # `fzf`
 
 [`fzf`](https://github.com/junegunn/fzf) is a general-purpose command-line fuzzy finder.

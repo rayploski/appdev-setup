@@ -1,3 +1,12 @@
++++
+title="ack"
+type="page"
+weight=100
++++
+
+
+
+
 # `ack`
 
 `ack` is a search tool designed for code. It's built to be a replacement for `grep` with higher speed and more options.

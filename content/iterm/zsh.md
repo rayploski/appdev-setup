@@ -1,6 +1,7 @@
 +++
 title="zsh"
 type="page"
+weight=10
 +++
 
 

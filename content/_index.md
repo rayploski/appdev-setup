@@ -3,6 +3,7 @@ title = "Red Hat AppDev Setup"
 description = "Some hints and tips for building out an AppDev environment for Red Hat technologies"
 +++
 
+
 # The AppDev Guide
 [The Red Hat AppDev Setup Guide {{%icon fa-github%}}](https://github.com/rayploski/appdev-setup) is a site for the busy developer looking to use Red Hat AppDev technologies.
 

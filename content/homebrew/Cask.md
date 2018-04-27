@@ -1,6 +1,7 @@
 +++
 title="Cask"
 type="page"
+weight="20"
 +++
 # Homebrew Cask
 [Homebrew-Cask](https://caskroom.github.io/) extends Homebrew and allows you to install large binary files via a command-line tool. Examples of these files is Google Chrome, Dropbox, VLC and Spectacle.

@@ -1,6 +1,7 @@
 +++
 title="iTerm2"
 type="page"
+weight=40
 +++
 
 

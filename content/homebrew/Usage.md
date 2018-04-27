@@ -1,6 +1,7 @@
 +++
 title="Using Homebrew"
 type="page"
+weight="10" #Use weight for ordering of pages.
 +++
 
 # Using Homebrew

@@ -1,6 +1,8 @@
 +++
+
 title="XCode"
 type="page"
+weight=20
 
 +++
 
@@ -15,6 +17,3 @@ For installing Xcode command line tools run:
     $ xcode-select --install
 
 It'll prompt you to install the command line tools. Follow the instructions and you'll have Xcode and Xcode command line tools both installed.
-
-## XQuartz
-XQuartz is Apple Inc.'s version of the X server, a component of the X Window System for macOS. It might be useful if you are developing software for macOS, it's available for download [here](http://xquartz.macosforge.org/landing/).
