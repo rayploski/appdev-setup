@@ -1,8 +1,11 @@
----
-title: "System Preferences"
-date: 2018-04-20T14:38:21-07:00
-draft: true
----
++++
+title="System Preferences"
+date=2018-04-20T14:38:21-07:00
+draft=true
+type="page"
+
++++
+
 
 # System Preferences
 First thing you should do is update the system. To do that go: **Apple menu () > About This Mac > Software Update.**
