@@ -35,27 +35,22 @@ Here are some useful apps that are available on Cask.
 
 ```sh
 $ brew cask install \
-    alfred \
-    android-file-transfer \
     asepsis \
     appcleaner \
-    caffeine \
+    atom \
     cheatsheet \
     docker \
-    doubletwist \
-    dropbox \
+    firefox \
+    flash-player \
+    iterm2 \
+    gimp \
+    github \
     google-chrome \
     google-drive \
-    google-hangouts \
-    flux \
-    latexian \
-    1password \
-    pdftk \
+    slack \
     spectacle \
-    sublime-text \
     superduper \
-    totalfinder \
-    transmission \
-    valentina-studio \
+    virtualbox \
+    visual-studio-code \
     vlc
 ```

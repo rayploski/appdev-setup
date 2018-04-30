@@ -1,7 +1,9 @@
 +++
+
 title="Git"
 type="page"
 weight=60
+
 +++
 
 
