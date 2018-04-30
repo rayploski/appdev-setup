@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Red Hat AppDev Setup on Red Hat AppDev Setup Guide</title>
+    <link>/</link>
+    <description>Recent content in Red Hat AppDev Setup on Red Hat AppDev Setup Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Homebrew</title>
+      <link>/homebrew/usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/homebrew/usage/</guid>
+      <description>Using Homebrew To install a package (or Formula in Homebrew vocabulary) simply type:
+$ brew install &amp;lt;formula&amp;gt;  To update Homebrew&amp;rsquo;s directory of formulae, run:
+$ brew update  Note: I&amp;rsquo;ve seen that command fail sometimes because of a bug. If that ever happens, run the following (when you have Git installed):
+$ cd /usr/local/Homebrew/ $ git fetch origin $ git reset --hard origin/master  To see if any of your packages need to be updated:</description>
+    </item>
+    
+    <item>
+      <title>zsh</title>
+      <link>/iterm/zsh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/iterm/zsh/</guid>
+      <description>Zsh We&amp;rsquo;ll install zsh for all the features offered by oh-my-zsh. The installation and usage is really intuitive. We will also create the file env.sh, it is a config file we maintain so as to not pollute the ~/.zshrc too much. env.sh holds aliases, exports, path changes etc. and you can find it at the bottom of this page.
+Zsh Install zsh and zsh-completions using Homebrew:
+$ brew install zsh zsh-completions  At this point you can customize your shell by using one of two frameworks Prezto or Oh My Zsh.</description>
+    </item>
+    
+    <item>
+      <title>Cask</title>
+      <link>/homebrew/cask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/homebrew/cask/</guid>
+      <description>Homebrew Cask Homebrew-Cask extends Homebrew and allows you to install large binary files via a command-line tool. Examples of these files is Google Chrome, Dropbox, VLC and Spectacle.
+Installation As of December 2015, Cask comes installed with Homebrew, if you have not installed Homebrew see the Homebrew section.
+Search To see if an app is available on Cask you can search on the official Cask website. You can also search using the following command:</description>
+    </item>
+    
+    <item>
+      <title>tree</title>
+      <link>/iterm/tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/iterm/tree/</guid>
+      <description>tree tree is a recursive directory listing command that produces a depth indented listing of files.
+Installation To install the latest version, use homebrew:
+brew install tree Usage Running tree will produce output like this:
+. ├── Apps │ ├── Octave.md │ ├── README.md │ ├── Settings.md │ ├── araxis-merge.jpg │ ├── beyond-compare.png │ ├── delta-walker.jpg │ ├── filemerge.png │ └── kaleidoscope.png ├── CONTRIBUTING.md ├── Cpp │ └── README.md ├── Docker │ └── README.</description>
+    </item>
+    
+    <item>
+      <title>fzf</title>
+      <link>/iterm/fzf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/iterm/fzf/</guid>
+      <description>fzf fzf is a general-purpose command-line fuzzy finder.
+Why use fzf  Speed Rich feature set Highly customizable  Installation Use homebrew to install fzf:
+brew install fzf  If you want to use shell extensions:
+/usr/local/opt/fzf/install  which are:
+ Key bindings (CTRL-T, CTRL-R, and ALT-C) (available for bash, zsh and fish) Fuzzy auto-completion (available for bash and zsh)  Usage Fuzzy completion  hit tab (↹) after:</description>
+    </item>
+    
+    <item>
+      <title>ack</title>
+      <link>/iterm/ack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/iterm/ack/</guid>
+      <description>ack ack is a search tool designed for code. It&amp;rsquo;s built to be a replacement for grep with higher speed and more options.
+Installation To install the latest version, use homebrew.
+brew install ack Why use ack over grep  Faster Skips unimportant files by default It searches recursively by default Customizable  Usage ack [OPTION]... PATTERN [FILES OR DIRECTORIES] Let&amp;rsquo;s say you want to find all JavaScript files that are using the module pancakes in your project, with ack it&amp;rsquo;s as easy as</description>
+    </item>
+    
+    <item>
+      <title>Git Ignore</title>
+      <link>/git/gitignore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/git/gitignore/</guid>
+      <description>Git Ignore (global) Create the file ~/.gitignore as shown below to not track files that are almost always ignored in all Git repositories.
+# Folder view configuration files .DS_Store Desktop.ini # Thumbnail cache files ._* Thumbs.db # Files that might appear on external disks .Spotlight-V100 .Trashes # Compiled Python files *.pyc # Compiled C++ files *.out # Application specific files venv node_modules .sass-cache  Or simply download macOS specific .</description>
+    </item>
+    
+    <item>
+      <title>XQuartz</title>
+      <link>/xcode/xquartz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/xcode/xquartz/</guid>
+      <description>XQuartz XQuartz is Apple Inc.&amp;rsquo;s version of the X server, a component of the X Window System for macOS. It might be useful if you are developing software for macOS, it&amp;rsquo;s available for download here.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/system-preferences/</loc>
+    <lastmod>2018-04-20T14:38:21-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/homebrew/usage/</loc>
+  </url>
+  
+  <url>
+    <loc>/iterm/zsh/</loc>
+  </url>
+  
+  <url>
+    <loc>/homebrew/cask/</loc>
+  </url>
+  
+  <url>
+    <loc>/xcode/</loc>
+  </url>
+  
+  <url>
+    <loc>/homebrew/</loc>
+  </url>
+  
+  <url>
+    <loc>/iterm/tree/</loc>
+  </url>
+  
+  <url>
+    <loc>/iterm/fzf/</loc>
+  </url>
+  
+  <url>
+    <loc>/iterm/</loc>
+  </url>
+  
+  <url>
+    <loc>/git/</loc>
+  </url>
+  
+  <url>
+    <loc>/vim/</loc>
+  </url>
+  
+  <url>
+    <loc>/emacs/</loc>
+  </url>
+  
+  <url>
+    <loc>/java/</loc>
+  </url>
+  
+  <url>
+    <loc>/node.js/</loc>
+  </url>
+  
+  <url>
+    <loc>/go/</loc>
+  </url>
+  
+  <url>
+    <loc>/iterm/ack/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/git/gitignore/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/xcode/xquartz/</loc>
+  </url>
+  
+</urlset>

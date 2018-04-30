@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homebrew on Red Hat AppDev Setup Guide</title>
+    <link>/homebrew/</link>
+    <description>Recent content in Homebrew on Red Hat AppDev Setup Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/homebrew/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Homebrew</title>
+      <link>/homebrew/usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/homebrew/usage/</guid>
+      <description>Using Homebrew To install a package (or Formula in Homebrew vocabulary) simply type:
+$ brew install &amp;lt;formula&amp;gt;  To update Homebrew&amp;rsquo;s directory of formulae, run:
+$ brew update  Note: I&amp;rsquo;ve seen that command fail sometimes because of a bug. If that ever happens, run the following (when you have Git installed):
+$ cd /usr/local/Homebrew/ $ git fetch origin $ git reset --hard origin/master  To see if any of your packages need to be updated:</description>
+    </item>
+    
+    <item>
+      <title>Cask</title>
+      <link>/homebrew/cask/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/homebrew/cask/</guid>
+      <description>Homebrew Cask Homebrew-Cask extends Homebrew and allows you to install large binary files via a command-line tool. Examples of these files is Google Chrome, Dropbox, VLC and Spectacle.
+Installation As of December 2015, Cask comes installed with Homebrew, if you have not installed Homebrew see the Homebrew section.
+Search To see if an app is available on Cask you can search on the official Cask website. You can also search using the following command:</description>
+    </item>
+    
+  </channel>
+</rss>

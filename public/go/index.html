@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Red Hat AppDev Setup Guide</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.40.1" />
+<title>Go :: Red Hat AppDev Setup Guide</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/go/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="/">Red Hat AppDev Setup Guide</a>
+  
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/rayploski/appdev-setup"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Github repo</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/rayploski/appdev-setup/archive/master.zip"  rel="noopener">
+                  <i class='fa fa-cloud-download'></i> <label>Download</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://developer.redhat.com"  rel="noopener">
+                  <i class='fa fa-bookmark'></i> <label>Documentation</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/credits"  rel="noopener">
+                  <i class='fa fa-bullhorn'></i> <label>Credits</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/system-preferences/" class="dd-item
+        ">
+      <div>
+      <a href="/system-preferences/">System Preferences</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/xcode/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/xcode/">XCode</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/xcode/xquartz/" class="dd-item">
+        <div>
+          <a href="/xcode/xquartz/">
+            XQuartz
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/homebrew/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/homebrew/">Homebrew</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/homebrew/usage/" class="dd-item">
+        <div>
+          <a href="/homebrew/usage/">
+            Using Homebrew
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/homebrew/cask/" class="dd-item">
+        <div>
+          <a href="/homebrew/cask/">
+            Cask
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/iterm/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/iterm/">iTerm2</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/iterm/zsh/" class="dd-item">
+        <div>
+          <a href="/iterm/zsh/">
+            zsh
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/iterm/tree/" class="dd-item">
+        <div>
+          <a href="/iterm/tree/">
+            tree
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/iterm/fzf/" class="dd-item">
+        <div>
+          <a href="/iterm/fzf/">
+            fzf
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/iterm/ack/" class="dd-item">
+        <div>
+          <a href="/iterm/ack/">
+            ack
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/git/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/git/">Git</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/git/gitignore/" class="dd-item">
+        <div>
+          <a href="/git/gitignore/">
+            Git Ignore
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/vim/" class="dd-item
+        ">
+      <div>
+      <a href="/vim/">Vim</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/emacs/" class="dd-item
+        ">
+      <div>
+      <a href="/emacs/">Emacs</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/java/" class="dd-item
+        ">
+      <div>
+      <a href="/java/">Java</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/node.js/" class="dd-item
+        ">
+      <div>
+      <a href="/node.js/">Node.js</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/go/" class="dd-item parent active
+        ">
+      <div>
+      <a href="/go/">Go</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/system-preferences/" >
+   System Preferences</option>
+    <option value="/xcode/" >
+   XCode</option>
+    <option value="/homebrew/" >
+   Homebrew</option>
+    <option value="/iterm/" >
+   iTerm2</option>
+    <option value="/git/" >
+   Git</option>
+    <option value="/vim/" >
+   Vim</option>
+    <option value="/emacs/" >
+   Emacs</option>
+    <option value="/java/" >
+   Java</option>
+    <option value="/node.js/" >
+   Node.js</option>
+    <option value="/go/"  selected>
+   Go</option> 
+  
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Go</h1>
+    
+    
+    
+
+
+
+<h1 id="go">Go</h1>
+
+<p><a href="https://github.com/golang/go">Go</a> (also known as Golang) is an open source programming language maintained by Google.</p>
+
+<h2 id="installation">Installation</h2>
+
+<pre><code>$ brew install golang
+</code></pre>
+
+<p>When installed, try to run <code>go version</code> to see the installed version of Go.</p>
+
+<h2 id="setup-your-workspace">Setup your workspace</h2>
+
+<h3 id="add-environment-variables">Add environment variables</h3>
+
+<p>Go has a unique approach of managing code where you have a single workspace for all your Go projects. For more information see the <a href="https://golang.org/doc/code.html#Workspaces">documentation</a>.</p>
+
+<p>First, you&rsquo;ll need to tell Go the location of your workspace. We&rsquo;ll do this by adding some environment variables in your shell config file (usually <code>.bash_profile</code>, <code>.bashrc</code> or <code>.zshrc</code>).</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#111">export</span> <span style="color:#111">GOPATH</span><span style="color:#f92672">=</span><span style="color:#111">$HOME</span>/go
+<span style="color:#111">export</span> <span style="color:#111">GOROOT</span><span style="color:#f92672">=</span>/usr/local/opt/go/libexec
+<span style="color:#111">export</span> <span style="color:#111">PATH</span><span style="color:#f92672">=</span><span style="color:#111">$PATH</span>:<span style="color:#111">$GOPATH</span>/bin
+<span style="color:#111">export</span> <span style="color:#111">PATH</span><span style="color:#f92672">=</span><span style="color:#111">$PATH</span>:<span style="color:#111">$GOROOT</span>/bin</code></pre></div>
+<h3 id="create-your-workspace">Create your workspace</h3>
+
+<p>Create the workspace directories tree:</p>
+
+<pre><code>$ mkdir -p $GOPATH $GOPATH/src $GOPATH/pkg $GOPATH/bin
+</code></pre>
+
+<p><code>$GOPATH/src</code> This is where your Go projects are located
+<code>$GOPATH/pkg</code> A folder that contains every package objects
+<code>$GOPATH/bin</code> The compiled binaries home</p>
+
+<h2 id="write-your-first-program">Write your first program</h2>
+
+<p>Create a file in your <code>$GOPATH/src</code>, for example <code>hello.go</code>, and input the following code</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#75af00">main</span>
+<span style="color:#f92672">import</span> <span style="color:#d88200">&#34;fmt&#34;</span>
+
+<span style="color:#00a8c8">func</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+    <span style="color:#75af00">fmt</span><span style="color:#111">.</span><span style="color:#75af00">Printf</span><span style="color:#111">(</span><span style="color:#d88200">&#34;hello, world\n&#34;</span><span style="color:#111">)</span>
+<span style="color:#111">}</span></code></pre></div>
+<p>Run the program by running:</p>
+
+<pre><code>$ go run hello.go
+</code></pre>
+
+<p>If you wish to compile it and move it to <code>$GOPATH/bin</code>, then run:</p>
+
+<pre><code>$ go install hello.go
+</code></pre>
+
+<p>Since we have <code>$GOPATH/bin</code> added to our <code>$PATH</code>, you can run your program from anywhere:</p>
+
+<pre><code>$ hello
+</code></pre>
+
+<h2 id="import-a-go-package">Import a Go package</h2>
+
+<p>Besides creating your own packages you can import and use other packages in your Go code. To do so you&rsquo;ll use the <code>go get</code> command:</p>
+
+<pre><code>$ go get -u github.com/gorilla/mux
+</code></pre>
+
+<p>The command above will import the package <code>mux</code> into this directory <code>$GOPATH/src/github.com/gorilla/mux</code>.</p>
+
+<p>You can then use this package in your Go programs like this:</p>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#75af00">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#111">(</span>
+    <span style="color:#d88200">&#34;net/http&#34;</span>
+    <span style="color:#d88200">&#34;log&#34;</span>
+    <span style="color:#d88200">&#34;github.com/gorilla/mux&#34;</span> <span style="color:#75715e">// Your imported package
+</span><span style="color:#75715e"></span><span style="color:#111">)</span>
+
+<span style="color:#00a8c8">func</span> <span style="color:#75af00">YourHandler</span><span style="color:#111">(</span><span style="color:#75af00">w</span> <span style="color:#75af00">http</span><span style="color:#111">.</span><span style="color:#75af00">ResponseWriter</span><span style="color:#111">,</span> <span style="color:#75af00">r</span> <span style="color:#f92672">*</span><span style="color:#75af00">http</span><span style="color:#111">.</span><span style="color:#75af00">Request</span><span style="color:#111">)</span> <span style="color:#111">{</span>
+    <span style="color:#75af00">w</span><span style="color:#111">.</span><span style="color:#75af00">Write</span><span style="color:#111">([]</span><span style="color:#111">byte</span><span style="color:#111">(</span><span style="color:#d88200">&#34;Gorilla!\n&#34;</span><span style="color:#111">))</span>
+<span style="color:#111">}</span>
+
+<span style="color:#00a8c8">func</span> <span style="color:#75af00">main</span><span style="color:#111">()</span> <span style="color:#111">{</span>
+    <span style="color:#75af00">r</span> <span style="color:#f92672">:=</span> <span style="color:#75af00">mux</span><span style="color:#111">.</span><span style="color:#75af00">NewRouter</span><span style="color:#111">()</span>
+    <span style="color:#75715e">// Routes consist of a path and a handler function.
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">r</span><span style="color:#111">.</span><span style="color:#75af00">HandleFunc</span><span style="color:#111">(</span><span style="color:#d88200">&#34;/&#34;</span><span style="color:#111">,</span> <span style="color:#75af00">YourHandler</span><span style="color:#111">)</span>
+
+    <span style="color:#75715e">// Bind to a port and pass our router in
+</span><span style="color:#75715e"></span>    <span style="color:#75af00">log</span><span style="color:#111">.</span><span style="color:#75af00">Fatal</span><span style="color:#111">(</span><span style="color:#75af00">http</span><span style="color:#111">.</span><span style="color:#75af00">ListenAndServe</span><span style="color:#111">(</span><span style="color:#d88200">&#34;:8000&#34;</span><span style="color:#111">,</span> <span style="color:#75af00">r</span><span style="color:#111">))</span>
+<span style="color:#111">}</span></code></pre></div>
+<h2 id="format-your-code">Format your code</h2>
+
+<p>Go has a built-in tool that automatically formats Go source code.</p>
+
+<p>To format a single file run:</p>
+
+<pre><code>$ gofmt -w yourcode.go
+</code></pre>
+
+<p>You can also format an entire package (<strong>Note that the command is different from formatting a single file</strong>):</p>
+
+<pre><code>$ go fmt path/to/your/package
+</code></pre>
+
+<h2 id="generate-documentation">Generate documentation</h2>
+
+<p>With the <code>godoc</code> command you can generate documentation from your code and read documentation from other packages.</p>
+
+<pre><code>$ godoc fmt                # documentation for package fmt
+$ godoc fmt Printf         # documentation for fmt.Printf
+$ godoc -src fmt           # fmt package interface in Go source form
+</code></pre>
+
+<p>You need to respect some spec in order to document using <code>godoc</code>. More information in the <a href="https://blog.golang.org/godoc-documenting-go-code">Godoc documentation</a>.</p>
+
+<h2 id="learn-more">Learn more</h2>
+
+<p>This <a href="https://tour.golang.org/">interactive tutorial</a> will let you learn more about Go.</p>
+
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/node.js/" title="Node.js"> <i class="fa fa-chevron-left"></i><label>Node.js</label></a>
+    <a class="nav nav-next" href="/system-preferences/" title="System Preferences" style="margin-right: 0px;"><label>System Preferences</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+  
+
+    <div class="github-link">
+      <a href="go/_index.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+  </div>
+
+
+	<div>
+
+
+  
+    Create a content/_footer.md file to customize the footer content
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

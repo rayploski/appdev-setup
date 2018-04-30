@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XCode on Red Hat AppDev Setup Guide</title>
+    <link>/xcode/</link>
+    <description>Recent content in XCode on Red Hat AppDev Setup Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/xcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>XQuartz</title>
+      <link>/xcode/xquartz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/xcode/xquartz/</guid>
+      <description>XQuartz XQuartz is Apple Inc.&amp;rsquo;s version of the X server, a component of the X Window System for macOS. It might be useful if you are developing software for macOS, it&amp;rsquo;s available for download here.</description>
+    </item>
+    
+  </channel>
+</rss>

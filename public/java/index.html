@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Red Hat AppDev Setup Guide</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.40.1" />
+<title>Java :: Red Hat AppDev Setup Guide</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "\/";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/java/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="/">Red Hat AppDev Setup Guide</a>
+  
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/rayploski/appdev-setup"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Github repo</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://github.com/rayploski/appdev-setup/archive/master.zip"  rel="noopener">
+                  <i class='fa fa-cloud-download'></i> <label>Download</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://developer.redhat.com"  rel="noopener">
+                  <i class='fa fa-bookmark'></i> <label>Documentation</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="/credits"  rel="noopener">
+                  <i class='fa fa-bullhorn'></i> <label>Credits</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/system-preferences/" class="dd-item
+        ">
+      <div>
+      <a href="/system-preferences/">System Preferences</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/xcode/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/xcode/">XCode</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/xcode/xquartz/" class="dd-item">
+        <div>
+          <a href="/xcode/xquartz/">
+            XQuartz
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/homebrew/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/homebrew/">Homebrew</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/homebrew/usage/" class="dd-item">
+        <div>
+          <a href="/homebrew/usage/">
+            Using Homebrew
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/homebrew/cask/" class="dd-item">
+        <div>
+          <a href="/homebrew/cask/">
+            Cask
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/iterm/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/iterm/">iTerm2</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/iterm/zsh/" class="dd-item">
+        <div>
+          <a href="/iterm/zsh/">
+            zsh
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/iterm/tree/" class="dd-item">
+        <div>
+          <a href="/iterm/tree/">
+            tree
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/iterm/fzf/" class="dd-item">
+        <div>
+          <a href="/iterm/fzf/">
+            fzf
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/iterm/ack/" class="dd-item">
+        <div>
+          <a href="/iterm/ack/">
+            ack
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/git/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/git/">Git</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/git/gitignore/" class="dd-item">
+        <div>
+          <a href="/git/gitignore/">
+            Git Ignore
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/vim/" class="dd-item
+        ">
+      <div>
+      <a href="/vim/">Vim</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/emacs/" class="dd-item
+        ">
+      <div>
+      <a href="/emacs/">Emacs</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/java/" class="dd-item parent active
+        ">
+      <div>
+      <a href="/java/">Java</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/node.js/" class="dd-item
+        ">
+      <div>
+      <a href="/node.js/">Node.js</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+    <li data-nav-id="/go/" class="dd-item
+        ">
+      <div>
+      <a href="/go/">Go</a><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/system-preferences/" >
+   System Preferences</option>
+    <option value="/xcode/" >
+   XCode</option>
+    <option value="/homebrew/" >
+   Homebrew</option>
+    <option value="/iterm/" >
+   iTerm2</option>
+    <option value="/git/" >
+   Git</option>
+    <option value="/vim/" >
+   Vim</option>
+    <option value="/emacs/" >
+   Emacs</option>
+    <option value="/java/"  selected>
+   Java</option> 
+  
+    <option value="/node.js/" >
+   Node.js</option>
+    <option value="/go/" >
+   Go</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Java</h1>
+    
+    
+    
+
+
+
+<h1 id="java">Java</h1>
+
+<p>Our customers and prospects run on various versions of Java (some even 4-5 years old)!  Here&rsquo;s the latest recommended way to install various JDKs from Oracle, OpenJDK and even Azul.  We will install and manage multiple versions of Java on MacOS.</p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="manage-multiple-jvms-with-jenv">Manage multiple JVMs with jenv</h3>
+
+<p>First you should check if Java is already installed</p>
+
+<pre><code>$ java -version
+</code></pre>
+
+<p>If you see an output like below then Java is already installed on your machine so skip to <em>Add Java to PATH</em>.</p>
+
+<pre><code>java version &quot;1.8.0_45&quot;
+Java(TM) SE Runtime Environment (build 1.8.0_45-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.45-b02, mixed mode)
+</code></pre>
+
+<p>If you don&rsquo;t see the output like above then you need to install Java on your system.</p>
+
+<h3 id="using-the-oracle-installer">Using the Oracle installer</h3>
+
+<p>Please download the macOS version from the <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Oracle website</a>.</p>
+
+<h3 id="using-homebrew">Using Homebrew</h3>
+
+<pre><code>brew update
+brew tap caskroom/versions
+</code></pre>
+
+<p>Then, install latest version of Java 10 via:</p>
+
+<pre><code>brew cask install java
+</code></pre>
+
+<p>or install Java 8 using:</p>
+
+<pre><code>brew cask install java8
+</code></pre>
+
+<p>Check if Java is correctly installed by running the <code>java -version</code> command again.</p>
+
+<h2 id="add-java-to-path">Add Java to PATH</h2>
+
+<p>Add <code>JAVA_HOME</code> to your environment variables by adding the line below to your <code>env.sh</code> (see <a href="/mac-setup/iTerm/README.html">iTerm2</a> section if you don&rsquo;t have a <code>env.sh</code> file).</p>
+
+<pre><code>export JAVA_HOME=&quot;`/usr/libexec/java_home -v 1.8`&quot;
+</code></pre>
+
+<p>If you are using Java 10, use the following:</p>
+
+<pre><code>export JAVA_HOME=&quot;`/usr/libexec/java_home -v 10`&quot;
+</code></pre>
+
+<p>You should have Java working now. Two popular IDE alternatives for writing Java are <a href="https://www.eclipse.org/downloads/">Eclipse</a> or <a href="https://www.jetbrains.com/idea/download/">IntelliJ</a>.</p>
+
+<h2 id="install-jenv">Install jenv</h2>
+
+<p>While it isn&rsquo;t a wholesale fix for the various java environments you may need, it does the trick for most use cases.  jenv will allow you to quickly switch from version to version of a JVM.  There are some tricks to getting it to work with various vendors (OpenJDK, Oracle, Azul)</p>
+
+<pre><code>brew install jenv
+</code></pre>
+
+<h2 id="install-openjdk">Install OpenJDK</h2>
+
+<p>Currently there is no &ldquo;official&rdquo; OpenJDK install via HomeBrew.  The best contibution out at the moment is AdoptOpenJDK.</p>
+
+<pre><code>brew tap AdoptOpenJDK/openjdk
+brew install &lt;version&gt;
+</code></pre>
+
+<h2 id="install-javadoc">Install javadoc</h2>
+
+<pre><code>brew cask install java-jdk-javadoc
+ln -s  /usr/local/Caskroom/java-jdk-javadoc/10.0.1,10:fb4372174a714e6b8c52526dc134031e/docs/index.html ~/Desktop/javadoc.html
+
+
+# AdoptOpenJDK - HomeBrew TAP
+</code></pre>
+
+<h2 id="to-use">To use:</h2>
+<div class="highlight"><pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew tap AdoptOpenJDK/openjdk
+brew install &lt;version&gt;</code></pre></div>
+<h2 id="versions">Versions</h2>
+
+<ul>
+<li>adoptopenjdk-openjdk8</li>
+<li>adoptopenjdk-openjdk9</li>
+<li>adoptopenjdk-openjdk10</li>
+</ul>
+
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/emacs/" title="Emacs"> <i class="fa fa-chevron-left"></i><label>Emacs</label></a>
+    <a class="nav nav-next" href="/node.js/" title="Node.js" style="margin-right: 0px;"><label>Node.js</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+  
+
+    <div class="github-link">
+      <a href="java/_index.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+  </div>
+
+
+	<div>
+
+
+  
+    Create a content/_footer.md file to customize the footer content
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+    
+
+    
+    
+
+    
+  </body>
+</html>
