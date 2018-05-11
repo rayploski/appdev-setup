@@ -1,5 +1,5 @@
 +++
-title="Vim"
+title="Vim and Emacs"
 type="page"
 weight="60"
 +++

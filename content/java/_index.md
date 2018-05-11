@@ -45,7 +45,7 @@ Currently there is no "official" OpenJDK install via HomeBrew.  The best contibu
 - adoptopenjdk-openjdk10
 
 
-### Manage multiple JVMs with jENV
+### Manage multiple JVMs with jEnv
 While it isn't a wholesale fix for the various java environments you may need, it does the trick for most use cases.  jenv will allow you to quickly switch from version to version of a JVM.  There are some tricks to getting it to work with various vendors (OpenJDK, Oracle, Azul)
 
     brew install jenv
@@ -64,19 +64,19 @@ After installing jENV and updating your resource file, you can add and choose wh
 
 Find which JDK casks that are installed:
 
-    ls /Library/Java/JavaVirtualMachines
-    jdk-10.0.1.jdk   jdk-9.0.1.jdk    jdk1.8.0_121.jdk jdk1.8.0_131.jdk zulu-10.1,11.jdk 
+    $ ls /Library/Java/JavaVirtualMachines
+    $ jdk-10.0.1.jdk   jdk-9.0.1.jdk    jdk1.8.0_121.jdk jdk1.8.0_131.jdk zulu-10.1,11.jdk 
 
-Add each listing from your JavaVirtualMachines directory to jENV
+Add each listing from your JavaVirtualMachines directory to jEnv _e.g._:
 
     jenv add /Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home
     jenv add /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
 
-Add each listing from your OpenJDK JVMs to jENV
+Add each listing from your OpenJDK JVMs to jEnv _e.g._:
 
     jenv add /usr/local/Cellar/adoptopenjdk-openjdk10/jdk-10+23/
 
-More details on [jENV](http://github.com/gcuisinier/jenv)
+More details on [jEnv](http://github.com/gcuisinier/jenv)
 
 
 ## Install javadoc

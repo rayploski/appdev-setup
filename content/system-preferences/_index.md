@@ -55,52 +55,14 @@ $ killall Dock
 - Uncheck fonts, images, files etc.
 - Uncheck the keyboard shortcuts as we'll be replacing them with Alfred
 
-## Accounts
-- Add an iCloud account and sync Calendar, Find my mac, Contacts etc.
-
 ## User Defaults
 - Enable repeating keys by pressing and holding down keys: `defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false` (and restart any app that you need to repeat keys in)
 - Change the default folder for screenshots
-    - Open the terminal and create the folder where you would like to store your screenshots: `mkdir /path/to/screenshots/`
-    - Then run the following command: `defaults write com.apple.screencapture location /path/to/screenshots/ && killall SystemUIServer`
+    - Open the terminal and create the folder where you would like to store your screenshots: 
+    
+            mkdir /path/to/screenshots/
+    
+    - Then run the following command: 
+    
+            defaults write com.apple.screencapture location /path/to/screenshots/ && killall SystemUIServer
 
-## How to write to NTFS on OS X Yosemite and El Capitan
-
-### Install Homebrew and Homebrew Cask
-- Instructions [here](http://sourabhbajaj.com/mac-setup/Homebrew/README.html)
-
-### Update Homebrew formulae:
-
-    $ brew update
-
-### Install osxfuse
-- If you are on OS X 10.11 (El Capitan), install the (3.x.x) from https://github.com/osxfuse/osxfuse/releases.
-
-    $ brew cask install osxfuse
-
-### Install ntfs-3g
-
-    $ brew install homebrew/fuse/ntfs-3g
-
-### If you are on OS X 10.11 (El Capitan), temporary disable System Integrity Protection
-
- - **Reboot** and hold CMD+R to get in recovery mode
- - Open the terminal and type:
-
-    $ csrutil disable
-
- - **Reboot** normally
-
-### Create a symlink for mount_ntfs
-
-    $ sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original
-    $ sudo ln -s /usr/local/sbin/mount_ntfs /sbin/mount_ntfs
-
-### If you are on OSX 10.11 (El Capitan), re-enable System Integrity Protection
- - **Reboot** and hold CMD+R to get in recovery mode
- - Open the terminal and type
-
-    $ csrutil enable
-
- - **Reboot** normally
- - Done
