@@ -10,11 +10,6 @@ weight=80
 Our customers and prospects run on various versions of Java (some even 4-5 years old)!  Here's the latest recommended way to install various JDKs from Oracle, OpenJDK and even Azul.  We will install and manage multiple versions of Java on MacOS.
 
 
-
-### Using the Oracle installer
-
-Please download the macOS version from the [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
-
 ### Using Homebrew
 
     brew update
@@ -43,6 +38,11 @@ Currently there is no "official" OpenJDK install via HomeBrew.  The best contibu
 - adoptopenjdk-openjdk8
 - adoptopenjdk-openjdk9
 - adoptopenjdk-openjdk10
+
+
+### Using the Oracle installer
+
+Optional:  While not our preferred JDK, you can  download the macOS version from the [Oracle website](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 
 ### Manage multiple JVMs with jEnv
